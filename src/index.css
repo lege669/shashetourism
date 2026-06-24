@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+/* --- PREMIUM LIGHT THEME OVERRIDES --- */
+
+/* Base body background & text rules */
+body.light-theme,
+.light-theme {
+  background-color: #f8fafc !important; /* light slate-50 background */
+  color: #0f172a !important; /* deep slate-900 text */
+}
+
+/* 1. IMMERSIVE HERO CAROUSEL: EXCLUDE FROM LIGHT MODE OVERRIDES
+   Hero imagery with text overlays is always best and most legible with native dark overlay styling. */
+.light-theme #home {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+.light-theme #home * {
+  color: inherit !important;
+}
+.light-theme #home .bg-neutral-900\/60,
+.light-theme #home .bg-black\/60 {
+  background-color: rgba(23, 23, 23, 0.6) !important;
+  border-color: rgba(64, 64, 64, 0.4) !important;
+}
+
+/* 2. MAIN SECTIONS LIGHT THEME OVERRIDES */
+.light-theme #about,
+.light-theme #attractions,
+.light-theme #directory,
+.light-theme #events,
+.light-theme #staff,
+.light-theme #news,
+.light-theme #gallery {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* 3. LIGHT CARD CONTAINERS
+   Maps dark neutral containers (like bg-neutral-900, bg-neutral-950, etc.) to clean white blocks with subtle shadows. */
+.light-theme .bg-neutral-900,
+.light-theme .bg-neutral-950,
+.light-theme .bg-black,
+.light-theme .bg-neutral-900\/40,
+.light-theme .bg-neutral-950\/50,
+.light-theme .bg-neutral-900\/60,
+.light-theme .bg-neutral-950\/60,
+.light-theme .bg-neutral-900\/80,
+.light-theme .bg-neutral-950\/85,
+.light-theme .bg-neutral-950\/80 {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Soft grid backgrounds or light containers */
+.light-theme .bg-neutral-900\/5,
+.light-theme .bg-neutral-900\/10,
+.light-theme .bg-neutral-950\/5,
+.light-theme .bg-neutral-950\/10 {
+  background-color: #f1f5f9 !important; /* slate-100 */
+}
+
+/* Interactive item highlights on hover */
+.light-theme .hover\:bg-neutral-900\/50:hover,
+.light-theme .hover\:bg-neutral-950\/50:hover {
+  background-color: #e2e8f0 !important; /* slate-200 */
+}
+
+/* 4. TYPOGRAPHY CONTRAST RE-ALIGNMENT */
+.light-theme .text-white,
+.light-theme .text-neutral-50,
+.light-theme .text-neutral-100,
+.light-theme .text-neutral-200 {
+  color: #0f172a !important; /* High-contrast text */
+}
+
+.light-theme .text-neutral-300,
+.light-theme .text-neutral-400,
+.light-theme .text-gray-400,
+.light-theme .text-slate-400 {
+  color: #334155 !important; /* Slate-700 for secondary text */
+}
+
+.light-theme .text-neutral-500,
+.light-theme .text-gray-500,
+.light-theme .text-slate-500 {
+  color: #475569 !important; /* Slate-600 for tertiary text */
+}
+
+/* 5. BRAND IDENTITY PROTECTION (ORANGE ACCENTS)
+   Keeps the beautiful municipal orange accents consistent and vibrant! */
+.light-theme .text-orange-500,
+.light-theme .text-orange-600,
+.light-theme .text-amber-500 {
+  color: #ea580c !important; /* Brand orange text */
+}
+
+.light-theme .bg-orange-600,
+.light-theme .bg-orange-500,
+.light-theme .bg-amber-600 {
+  background-color: #ea580c !important;
+  color: #ffffff !important;
+}
+
+.light-theme .bg-orange-600\/10,
+.light-theme .bg-orange-500\/10 {
+  background-color: rgba(234, 88, 12, 0.08) !important;
+}
+
+.light-theme .border-orange-500\/10,
+.light-theme .border-orange-500\/20 {
+  border-color: rgba(234, 88, 12, 0.15) !important;
+}
+
+/* 6. BORDER AND SEPARATOR OVERRIDES */
+.light-theme .border-neutral-800,
+.light-theme .border-neutral-900,
+.light-theme .border-neutral-700,
+.light-theme .border-neutral-850,
+.light-theme .border-slate-800 {
+  border-color: #cbd5e1 !important; /* slate-300 borders */
+}
+
+/* 7. GLASSMORPHIC TOP NAVIGATION MODE */
+.light-theme nav {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  border-color: rgba(226, 232, 240, 0.8) !important;
+  color: #0f172a !important;
+}
+
+.light-theme nav a {
+  color: #334155 !important;
+}
+
+.light-theme nav a.text-orange-500,
+.light-theme nav a:hover {
+  color: #ea580c !important;
+}
+
+/* 8. FORM CONTROLS (INPUTS, DROPDOWNS, TEXTAREAS) */
+.light-theme input,
+.light-theme select,
+.light-theme textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important; /* darker border for accessibility */
+}
+
+.light-theme input::placeholder,
+.light-theme textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* 9. SHASHEMENE MUNICIPALITY FOOTER */
+.light-theme footer {
+  background-color: #f1f5f9 !important; /* clean light gray-slate */
+  color: #0f172a !important;
+  border-top-color: #ea580c !important;
+}
+
+.light-theme footer .bg-neutral-950,
+.light-theme footer .bg-neutral-900,
+.light-theme footer .bg-black {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+.light-theme footer input {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.light-theme footer .text-neutral-400,
+.light-theme footer .text-neutral-500 {
+  color: #334155 !important;
+}
+
+/* 10. MODAL INTERFACES AND OVERLAYS */
+.light-theme .fixed.inset-0.bg-black\/80,
+.light-theme .fixed.inset-0.bg-neutral-950\/80 {
+  background-color: rgba(15, 23, 42, 0.7) !important; /* slate-900 with opacity */
+}
+
+/* Standard cards box shadow to create depth in light layout */
+.light-theme .rounded-3xl,
+.light-theme .rounded-2xl,
+.light-theme .rounded-xl {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Keep star ratings and gold highlights vibrant */
+.light-theme .text-yellow-500 {
+  color: #eab308 !important;
+}
+
+/* Admin panel active buttons inside login modal */
+.light-theme .bg-neutral-800 {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+.light-theme .hover\:bg-neutral-800:hover {
+  background-color: #cbd5e1 !important;
+}
+
+/* Staff spotlights and special badges */
+.light-theme .bg-green-500\/5 {
+  background-color: rgba(22, 163, 74, 0.08) !important;
+  border-color: rgba(22, 163, 74, 0.2) !important;
+}
+.light-theme .text-emerald-400 {
+  color: #16a34a !important; /* rich emerald text */
+}

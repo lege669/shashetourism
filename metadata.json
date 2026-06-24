@@ -1,0 +1,6 @@
+{
+  "name": "Shashemene Tourism",
+  "description": "Discover the vibrant culture, rich history, and natural wonders of Shashemene, Ethiopia. Explore local attractions, hotels, events, and meet our dedicated tourism development team.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
